@@ -1,0 +1,37 @@
+img{
+    width: 100%;
+}
+.Menu{
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    width: 289px;
+    
+}
+
+.SidebarList{
+    height: 100%;
+    width: 100%;
+}
+
+.SidebarList .row{
+    height: 40px;
+    list-style-type: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+    transition: 200ms color ease-in;
+}
+
+.SidebarList .row :hover{
+    color: #fff;
+}
+
+.row a{
+    color: rgb(179, 179, 179);
+    text-decoration: none;
+}
+
+.logo{
+    width: 129.15px;
+}
