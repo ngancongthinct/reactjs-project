@@ -4,12 +4,20 @@ import CardRow from '../../components/Card/Card_row/CardRow';
 import Podcast from '../../components/Card/Podcast/Podcast';
 import './HomePage.scss'
 import Playlist from '../../components/Card/Playlist/Playlist';
-
+import { useEffect, useState } from 'react';
+import userApi from '../../api/user'
 HomePage.propTypes = {
     
 };
 
 function HomePage(props) {
+    const [currentPlaylist, setCurrentPlaylist] = useState([])
+    useEffect(()=>{
+      const result = userApi.currentPlaylistApi({
+        id:'382ObEPsp2rxGrnsizN5TX'
+      })
+    //   setCurrentPlaylist(result?.playlists?.items || [])
+    },[])
     return (
         <div className='homepage-container text-white '>
             <section className='good-afternoon'>

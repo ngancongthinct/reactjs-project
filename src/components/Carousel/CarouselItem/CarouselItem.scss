@@ -1,0 +1,17 @@
+.rectangle-container{
+    width: 412px;
+    height: 220px;
+    background-color: rgb(141, 103, 171);
+    position: relative;
+    overflow: hidden;
+}
+
+
+.rectangle-container img{
+    width: 128px;
+    height: 128px;
+    transform: rotate(25deg);
+    position: absolute;
+    right: -17px;
+    bottom: -7px;
+}
